@@ -20,14 +20,14 @@ if((isset($_POST['email']) && !empty(trim($_POST['email']))) && (isset($_POST['m
  
 	$mail = new PHPMailer();
 	$mail->isSMTP();
-	$mail->Host = 'smtp.weblink.com.br';
+	$mail->Host = '####';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'contato@almirandradepersonal.com.br';
-	$mail->Password = 'Pp@8905';
+	$mail->Username = '####';
+	$mail->Password = '####';
 	$mail->Port = 587;
  
-	$mail->setFrom('contato@almirandradepersonal.com.br');
-	$mail->addAddress('contato@almirandradepersonal.com.br');
+	$mail->setFrom('###');
+	$mail->addAddress('####');
  
 	$mail->isHTML(true);
 	$mail->Subject = "Contato";
